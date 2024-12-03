@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="author" content="Eric dos Santos">
+
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/station.css">
+
+        <script type="module" src="assets/js/main.js"></script>
+        <script type="module" src="assets/js/station/ownedStation.js" defer></script>
+        <script type="module" src="assets/js/station/stationFactory.js" defer></script>
+        <script type="module" src="assets/js/common/elementFactory.js" defer></script>
+        <script type="module" src="assets/js/dashboard/dashboardManager.js" defer></script>
+        <script type="module" src="assets/js/dashboard/dashboardUtils.js" defer></script>
+        <script type="module" src="assets/js/common/owneds.js" defer></script>
+        <script type="module" src="assets/js/services/apiClient.js" defer></script>
+        <script type="module" src="assets/js/services/dataClassifier.js" defer></script>
+        <script type="module" src="assets/js/services/sseService.js" defer></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <header>
+            <article id="header-title" class="segoe-ui">
+                <h1>SPQAr</h1>
+                <h2>Monitoramento e qualidade do ar de SP</h2>
+            </article>
+            <a href="https://github.com/SPQAr" id="documentation" title="documentação" target="_blank">
+                <span id="repository-documentation">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                </span>
+            </a>
+        </header>
+        <main id="dashboard"> </main>
+        <footer class="segoe-ui">
+            &copy; MQAr 2024 - Todos os direitos reservados | <a alt="Licença MIT" href="https://opensource.org/license/mit" target="_blank">License MIT</a>
+        </footer>
+    </body>
+</html>

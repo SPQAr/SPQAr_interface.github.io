@@ -1,0 +1,133 @@
+:root {
+    --icon-size: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.segoe-ui {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: visible;
+    background-color: #edf4ed;
+}
+
+header {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    height: 25vh;
+    width: 100%;
+    background-color: #dbe8da;
+}
+
+#header-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#header-title h1 {
+    font-size: 2rem;
+}
+
+#header-title h2 {
+    font-size: 1rem;
+}
+
+#documentation {
+    position: absolute;
+    right: 25px;
+}
+
+#repository-documentation {
+    position: relative;
+    display: flex;
+    height: var(--icon-size);
+    width: var(--icon-size);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #bdeabe;
+    transition: background-color 0.5s;
+}
+
+#repository-documentation:hover {
+    background-color: #b6d1b6;
+}
+
+#repository-documentation ion-icon {
+    font-size: 2.2rem;
+    color: white;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+    background-color: transparent;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    bottom: 5px;
+    width: 100%;
+}
+
+footer a {
+    color: black;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #header-title h1 {
+        font-size: 1.85rem;
+    }
+
+    #header-title h2 {
+        font-size: 0.85rem;
+    }
+
+    #documentation {
+        position: fixed;
+        z-index: 1000;
+        bottom: 50px;
+        right: 25px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
