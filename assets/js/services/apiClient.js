@@ -20,7 +20,7 @@ import createStation from "../station/stationFactory.js";
  * 
  * @type {SSEService}
  */
-const sseService = new SSEService('http://localhost:3000/data');
+const sseService = new SSEService('https://spqar-api.onrender.com/data');
 
 /**
  * Estabelece a conexão com o servidor SSE e define os callbacks de sucesso e erro.
